@@ -3,7 +3,8 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>LOGIN</title>
+        <title>Nos Laureats</title>
+
         <link rel="stylesheet" href="css/style.css">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" /> 
     </head>
@@ -41,10 +42,8 @@
                     <!--End Icone Zone-->	
 
                     <div class="login">
-                        <input type="text" placeholder="Username" id="username">
-                        <input type="password" placeholder="Password" id="password">
-                        <button type="submit">Log In</button>
-                    </div>                   
+                        <span class="loguee">Bonjour Gertrude !</span>
+                    </div>                
                 </div>
                 <!--End Bandeau-->
 
@@ -53,8 +52,8 @@
                     <!--Logo-->
                     <img src="image/logo.png" alt="logo-de-BBiblio" class="logo">
 
-                    <!--Start Navbar-->
-                    <nav role="navigation">
+                    <!--StartNavbar-->
+                    <nav>
                         <ul class="nav-list">
                             <li><a href="#">Les Oeuvres</a></li>  
                             <li><a href="#" aria-haspopup="true">Le Concours</a>
@@ -88,37 +87,111 @@
             </header>
             <!-- End Header -->
 
-             <!-- Start Main -->
-             <main>
-                <!--Start Slider-->
+
+            <!-- Start Main -->
+            <main>
+                <!-- Start Slider -->
                 <div class="slider">
-                     <!--Start Title Zone-->
-                     <div class="title">
-                        <h2>LOG IN</h2>
+
+                    <!--Start Title Zone-->
+                    <div class="title">
+                        <h2>NOS LAUREATS</h2>
                     </div>
                     <!--End Title Zone-->
-                  
-                    <form class="formulaire-jury">
-                        <p>
-                            <i class="login__icon fas fa-user"></i>
-                             <!--Pseudo Input-->
-                             <input type="text" id="pseudo" name="pseudo" placeholder="Renseignez votre Login ici" autofocus="" required="">
-                        </p>
-                        <p>
-                            <i class="login__icon fas fa-lock"></i>
-                            <input type="password" id="pass" placeholder="Password" required="">
-                        </p>
-                       <p>
-                            <button id="loguez" class="loguez-button">Loguez-Vous 
-                                <i class="button__icon fas fa-chevron-right"></i>
-                            </button>		
-                        </p>			
-                    </form>
+
+                    <!--Start Affichage Slider-->
+                    <div class="affichage-slider-laureats">
+                        <!--Start Annee Container-->
+                        <div id="annee-container">
+                            <h2>Années</h2>
+                            <ul id="chronologie">
+                                <li><a href="#2021">2021</a></li>
+                            </ul>
+                        </div>
+                        <!--Start Laureats Annee-->
+                        <div class="laureats-annee">
+                            <h2>2021</h2>                                        
+                            <div class="par-categorie">        
+                                <h3>Roman français</h3>
+                                <!--Start Slide Left-->
+                                <div class="slide-left">     
+                                    <div class="image-laureat">
+                                        <a href="page-laureat.html">
+                                            <img src="image/laureats-couv.jpg" class="laureat-couv" alt="photo couverture">
+                                        </a>
+                                    
+                                        <h3>Procrastination</h3>
+                                        <p>Tony Prachett</p>
+                                        <p>Pocket</p>
+                                    </div>    
+                                    <div class="laureats-resume">
+                                        Le temps est une ressource qu'il faut gérer, chacun le sait. Sur le Disque-monde, c'est le boulot des moines de l'Histoire, qui l'emmagasinent, le prélèvent où on le gaspille (par exemple sous la mer: de combien de temps a besoin une morue ?) et le redistribuent à de gros consommateurs comme les villes où l'on en manque toujours. 
+                                        Mais la fabrication de la première horloge du monde vraiment précise donne le départ d'une course contre... disons la montre pour Lou-tsé et son apprenti Lobsang. Parce qu'elle va arrêter le temps....
+                                    </div>
+                                </div>
+                                <!--End Slide Left-->
+                            </div>
+                            <div class="clear"></div>
+
+                            <div class="par-categorie">
+                                <h3>Roman étranger</h3>
+                                    <div class="image-laureat">
+                                        <a href="page-laureat.html">
+                                            <img src="image/laureats-couv.jpg" class="laureat-couv" alt="photo couverture">
+                                        </a>
+                                                                
+                                        <h3>Procrastination</h3>
+                                        <p>Tony Prachett</p>
+                                        <p>Pocket</p>
+                                    </div>    
+                                    <div class="laureats-resume">
+                                        Le temps est une ressource qu'il faut gérer, chacun le sait.Sur le Disque-monde, c'est le boulot des moines de l'Histoire, qui l'emmagasinent, le prélèvent où on le gaspille (par exemple sous la mer: de combien de temps a besoin une morue ?) et le redistribuent à de gros consommateurs comme les villes où l'on en manque toujours. Mais la fabrication de la première horloge du monde vraiment précise donne le départ d'une course contre... disons la montre pour Lou-tsé et son apprenti Lobsang. Parce qu'elle va arrêter le temps....
+                                    </div>
+                            </div>    
+                            <div class="clear"></div>
+
+                            <div class="par-categorie">
+                                <h3>Documentaire</h3>
+                                    <div class="image-laureat">
+                                        <a href="page-laureat.html">
+                                            <img src="image/laureats-couv.jpg" class="laureat-couv" alt="photo couverture">
+                                        </a>
+                                    
+                                        <h3>Procrastination</h3>
+                                        <p>Tony Prachett</p>
+                                        <p>Pocket</p>
+                                    </div>    
+                                    <div class="laureats-resume">
+                                        Le temps est une ressource qu'il faut gérer, chacun le sait.Sur le Disque-monde, c'est le boulot des moines de l'Histoire, qui l'emmagasinent, le prélèvent où on le gaspille (par exemple sous la mer: de combien de temps a besoin une morue ?) et le redistribuent à de gros consommateurs comme les villes où l'on en manque toujours. Mais la fabrication de la première horloge du monde vraiment précise donne le départ d'une course contre... disons la montre pour Lou-tsé et son apprenti Lobsang. Parce qu'elle va arrêter le temps....
+                                    </div>                                            
+                            </div>
+                                
+                            <div class="clear"></div>  
+
+                            <div class="par-categorie">
+                                <h3>Biographie</h3>
+                                    <div class="image-laureat">
+                                        <a href="page-laureat.html"><img src="image/laureats-couv.jpg" class="laureat-couv" alt="photo couverture"></a>
+
+                                        <h3>Procrastination</h3>
+                                        <p>Tony Prachett</p>
+                                        <p>Pocket</p>
+                                    </div>
+                                    <div class="laureats-resume">
+                                        Le temps est une ressource qu'il faut gérer, chacun le sait.Sur le Disque-monde, c'est le boulot des moines de l'Histoire, qui l'emmagasinent, le prélèvent où on le gaspille (par exemple sous la mer: de combien de temps a besoin une morue ?) et le redistribuent à de gros consommateurs comme les villes où l'on en manque toujours. Mais la fabrication de la première horloge du monde vraiment précise donne le départ d'une course contre... disons la montre pour Lou-tsé et son apprenti Lobsang. Parce qu'elle va arrêter le temps....
+                                    </div>
+                            </div>
+
+                        </div>
+                        <!--End Laureats Annee-->
+                    </div> 
+                    <!--End Affichage Slider-->           
+                    <div class="clear"></div>     
                 </div>
                 <!--End Slider-->
 
-                 <!--Start Widget Left-->
-                 <div class="widget-left">
+                <!--Start Widget Left-->
+                <div class="widget-left">
                     <div class="news">
                         <h2>ACTUALITES</h2>
                             <ul>
@@ -131,7 +204,7 @@
                         <p>Soutenez vos publications préferées
                         <span>#BBiblioBB</span></p>
                         <h4 class="publication-title">VOS PUBLICATIONS</h4>
-                        <img src="image/fil-publication.jpg">
+                        <img src="image/fil-publication.jpg" alt="fil reseaux sociaux">
                     </div>
                 </div>
                 <!--End Widget Left-->
@@ -159,8 +232,7 @@
                 <div class="clear"></div>
             </main>
             <!-- End Main -->
-            </main>
-
+            
              <!-- Start Footer -->
              <footer>
                 <!--Start Plan du Site Zone-->
@@ -232,6 +304,7 @@
 
         </div>
         <!-- End Wrapper -->
-        <script src="js/script-login.js"></script>          
+         
+        <script src="js/script.js"></script>          
     </body>
 </html>
