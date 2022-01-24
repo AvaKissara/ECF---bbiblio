@@ -16,7 +16,7 @@ var passwordSaisie = "";
 var newPassword = "";
 
 //Récupère le login et le password saisis. Vérifie si ils correspondent à une entrée dans la bdd et si il s'agit d'un auteur ou d'un juré.
-//Redirige vers la page d'accès juré ou auteur en fonction des informations renseignées. 
+//Redirige vers la page d'accès juré ou auteur en fonction des informations renseignées. Pour le test, utiliser les valeurs initiales de l'array infoJury.
 function validerRediriger() {
     loginSaisie = document.getElementById("pseudo").value;
     passwordSaisie = document.getElementById("pass").value;
