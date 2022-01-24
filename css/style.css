@@ -170,6 +170,10 @@ a.socials-item:hover {
 .cart-log-icone i {
     font-size: 30px;
     padding: 8px;
+    
+}
+.cart-log-icone a {
+    padding: 18px 5px 5px 5px;
 }
 
 /*End Zone Logo*/
