@@ -238,7 +238,7 @@ nav ul li ul li {
 /*Start Main*/
 .slider {
     display: inline-block;
-    background-color: rgb(243, 154, 154);
+    background-color: rgb(240, 151, 36);
     min-height: 700px;
     max-width: 850px;
     margin: 40px 20px 7px 150px;
@@ -378,9 +378,9 @@ nav ul li ul li {
 }
 
 .laureats-annee {
-    padding: 0 45px;
+    padding: 15px 45px;
     margin-top: 15px;
-    max-width: 580px;
+    max-width: 500px;
 }
 
 .laureats-annee span {
