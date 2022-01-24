@@ -414,6 +414,10 @@ nav ul li ul li {
     height: 100px;
 }
 
+.presentation-laureats-oeuvre {
+    padding-top: 35px;
+}
+
 .laureats-resume {
     float:right;
     width: 300px;
