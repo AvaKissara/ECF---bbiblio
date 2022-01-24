@@ -387,25 +387,26 @@ nav ul li ul li {
 }
 
 .laureats-annee {
-    padding: 15px 45px;
+    padding: 15px 30px;
     margin-top: 15px;
-    max-width: 700px;
+    max-width: 900px;
 }
 
 .laureats-annee span {
     margin: 25px;  
+    
 }
 
 .par-categorie {
-    padding: 50px 55px;
-    width: 550px;
-  
+    padding: 50px 40px;
+    width: 600px;
+    min-height: 450px;
 }
 
 .image-laureat {
     float: left;
-    width: 100px;
-    padding-right: 50px;
+    width: 150px;
+    padding-right: 80px;
 }
 
 .presentation-livre {
@@ -422,6 +423,7 @@ nav ul li ul li {
     float:right;
     width: 300px;
     text-align: justify;
+    padding-left: 45px;
 }
 
 /*Start Formulaire Inscription et Participation*/
