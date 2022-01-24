@@ -1,19 +1,3 @@
-var infoLivre = [
-    ["Dieu et l'Etat", "Mikhail Alexandrovitch", "Bakounine", "Roman Etranger"],
-    ["L'Assomoir", "Emile", "Zola", "Roman Français"],
-    ["Capitalisme, désir et servitude", "Frédéric", "Lordon", "Roman Français"],
-    ["Le Temps des Tempêtes", "Nicolas", "Sarkozy", "Biographie"],
-    ["Utopia", "Thomas", "Moore", "Roman Etranger"],
-    ["Revolucion", "Emmanuel", "Macron", "Roman Français"],
-];
-var infoAuteur = [
-    ["Mikhail Alexandrovitch", "Bakounine", "Roman Etranger"],
-    ["Emile", "Zola", "Roman Français"],
-    ["Frédéric", "Lordon", "Roman Français"],
-    ["Nicolas", "Sarkozy", "Biographie"],
-    ["Thomas", "Moore", "Roman Etranger"],
-    ["Emmanuel", "Macron", "Roman Français"],
-];
 var infoJury = [
     ["Anna-Lise Durine","analiz.durine@gmail.com", "jury", "Roman Français"],
     ["Ali Wood", "wilcometoaliwood@gmail.com", "jury", "Romain Etranger"],
@@ -22,8 +6,8 @@ var infoJury = [
     ["Leon Dit", "journalistedubigoudi@gmail.com", "jury", "Documentaire"],
 ];
 var btnEnregistez = document.getElementById("enregistrez");
-var nomAuteur = "";
-var prenomAuteur = "";
+var nom = "";
+var prenom = "";
 var titreOeuvre = "";
 var boxCategorie = "";
 var categorieValue = "";
@@ -32,22 +16,17 @@ var profileMembre= "";
 var x = 0;
 var y = 0;
 var comptUser = 25360;
-// var url = window.location.search;
-// var urlParams = new URLSearchParams(url);
 
-//Récupère les valeurs des input texte
+
+//Récupère les valeurs text et email saisies par l'utilisateur et ajoute une nouvelle ligne remplie en conséquence dans la bdd.
 function recupInfoPerso() {
-    pseudoInscription = document.getElementById("nom").value;
-    emailInscritpion = document.getElementById("email").value;
+    nom = document.getElementById("nom").value;
+    prenom = document.getElementById("prenom").value;
     
-    infoJury.push([pseudoInscription, emailInscritpion, profileMembre]);
-    // console.log(infoAuteur);
-    // alert(urlParams.get("titre-oeuvre"));
-    return infoJury;
+    infoJury.push([nom, prenom, profileMembre]);
 }
-console.log(infoJury);
 
-//Récupère la valeur de la checkbox sélectionnée
+//Récupère la valeur de la checkbox sélectionnée par l'utilisateur
 function recupInfoCheckbox() {  
     boxCategorie = document.getElementsByName("categorie");
     
@@ -67,22 +46,8 @@ function recupInfoCheckbox() {
     }   
 }
 
-function afficher() {  
-    for (i=0; i<infoJury.length; i++) 
-    {
-        comptUser++;
-        infoJury[i].splice(2, 0, comptUser);       
-    }
-    alert("*A recevoir par email* \nLogin: " + pseudoInscription + "\nPassword: " + comptUser);
-}
 
-//Récupère les valeurs saisies dans le formulaire
-btnInscrivez.addEventListener("click", function() {
+btnEnregistez.addEventListener("click", function() {
     recupInfoPerso();
     recupInfoCheckbox();
-    afficher();
-});
-
-btnLoguez.addEventListener("click", function() {
-    window.location.href="login.html";
 });

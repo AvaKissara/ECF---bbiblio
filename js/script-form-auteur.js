@@ -1,3 +1,6 @@
+//Ce script permet de d'enregistrer une oeuvre pour concourir
+
+//BDD
 var infoLivre = [
     ["Dieu et l'Etat", "Mikhail Alexandrovitch", "Bakounine", "Roman Etranger"],
     ["L'Assomoir", "Emile", "Zola", "Roman Français"],
@@ -21,10 +24,8 @@ var prenomAuteur = "";
 var titreOeuvre = "";
 var boxCategorie = "";
 var categorieValue = "";
-// var url = window.location.search;
-// var urlParams = new URLSearchParams(url);
 
-//Récupère les valeurs des input texte
+//Récupère les valeurs des input saisis par l'utilisateur
 function recupInfoPerso() {
     nomAuteur = document.getElementById("nom").value;
     prenomAuteur = document.getElementById("prenom").value;
@@ -32,11 +33,9 @@ function recupInfoPerso() {
     
     infoAuteur.push([prenomAuteur, nomAuteur, categorieValue]);
     infoLivre.push([titreOeuvre, prenomAuteur, nomAuteur, categorieValue]);
-    // console.log(infoAuteur);
-    // alert(urlParams.get("titre-oeuvre"));
 }
 
-//Récupère la valeur du bouton radio sélectionné
+//Récupère la valeur du bouton radio sélectionné par l'utilisateur
 function recupInfoRadio() {
     boxCategorie = document.getElementsByName("categorie");
     
@@ -50,12 +49,9 @@ function recupInfoRadio() {
     }
 }
 
-//Récupère les valeurs saisies dans le formulaire
+//Récupère les valeurs saisies dans le formulaire pour mettre la bdd à jour.
 btnCandidatez.addEventListener("click", function() {   
     recupInfoRadio();
     recupInfoPerso();
-    console.table(infoAuteur);
-    console.table(infoLivre);
-    alert("!!");
 });
 

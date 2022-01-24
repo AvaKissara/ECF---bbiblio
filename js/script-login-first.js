@@ -1,3 +1,6 @@
+//Ce script permet de gérer la première connexion suite à l'inscription.
+
+//BDD
 var infoJury = [
     ["Anna-Lise Durine","analiz.durine@gmail.com", 25361, "jury", "Roman Français"],
     ["Ali Wood", "wilcometoaliwood@gmail.com", 25362, "jury", "Romain Etranger"],
@@ -6,12 +9,15 @@ var infoJury = [
     ["Leon Dit", "journalistedubigoudi@gmail.com", 25365, "jury", "Documentaire"],
     ["Bakounine", "anardeshiste@gmail.com", 25366, "auteur", "Roman Etranger"]
 ];
+
 var btnLoguez = document.getElementById("loguez");
 var btnfirstConnexion = document.getElementById("first-connexion");
 var loginSaisie = "";
 var passwordSaisie = "";
 var newPassword = "";
 
+//Récupère les valeurs text saisies par l'utilisateur et ajoute une nouvelle ligne remplie en conséquence dans la bdd.
+//Demande à l'utisateur de changer le password et met à jour la bdd.
 function modifyPassword() {
     loginSaisie = document.getElementById("pseudo").value;
     passwordSaisie = document.getElementById("pass").value;
@@ -26,6 +32,8 @@ function modifyPassword() {
     }
 }
 
+//Récupère le login et le password saisis. Vérifie si ils correspondent à une entrée dans la bdd.
+//Si c'est le cas redirige vers la page de login générale. 
 function validerRediriger() {
     loginSaisie = document.getElementById("pseudo").value;
     passwordSaisie = document.getElementById("pass").value;

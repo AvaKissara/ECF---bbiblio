@@ -1,3 +1,6 @@
+//Ce script permet de d'enregistrer un membre (juré ou auteur) au concours.
+
+//BDD
 var infoJury = [
     ["Anna-Lise Durine","analiz.durine@gmail.com", "jury", "Roman Français"],
     ["Ali Wood", "wilcometoaliwood@gmail.com", "jury", "Romain Etranger"],
@@ -5,6 +8,7 @@ var infoJury = [
     ["Jean Gross", "lapetitegraine@gmail.com", "jury", "Documentaire"],
     ["Leon Dit", "journalistedubigoudi@gmail.com", "jury", "Documentaire"],
 ];
+
 var btnInscrivez = document.getElementById("inscrivez");
 var btnLoguez = document.getElementById("loguez");
 var nomAuteur = "";
@@ -19,7 +23,7 @@ var y = 0;
 var comptUser = 25360;
 
 
-// //Récupère la valeur du bouton radio sélectionné
+//Récupère la valeur du bouton radio sélectionné par l'utilisateur
 function recupInfoRadio() {
     radioMembre = document.getElementsByName("membre");
     
@@ -33,7 +37,7 @@ function recupInfoRadio() {
     }
 }
 
-//Récupère les valeurs des input texte
+//Récupère les valeurs text et email saisies par l'utilisateur et ajoute une nouvelle ligne remplie en conséquence dans la bdd.
 function recupInfoPerso() {
     pseudoInscription = document.getElementById("pseudo").value;
     emailInscritpion = document.getElementById("email").value;
@@ -41,6 +45,8 @@ function recupInfoPerso() {
     infoJury.push([pseudoInscription, emailInscritpion, profileMembre]);
 }
 
+//Crée un mot de passe provisoire.
+//"Envoi" les identifiants de connexion provisoires permettant la 1ère connexion
 function afficher() {  
     for (i=0; i<infoJury.length; i++) 
     {
@@ -51,12 +57,8 @@ function afficher() {
     window.open("login.html");
 }
 
-//Récupère les valeurs saisies dans le formulaire
 btnInscrivez.addEventListener("click", function() {
     recupInfoRadio();
     recupInfoPerso();
-    // recupInfoCheckbox();
     afficher();
-    console.table(infoJury);
-    alert(infoJury);
 });

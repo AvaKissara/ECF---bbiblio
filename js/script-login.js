@@ -1,3 +1,6 @@
+//Ce script permet de gérer la connexion des membres (jurés et auteurs)
+
+//BDD
 var infoJury = [
     ["Anna-Lise Durine","analiz.durine@gmail.com", 25361, "jury", "Roman Français"],
     ["Ali Wood", "wilcometoaliwood@gmail.com", 25362, "jury", "Romain Etranger"],
@@ -12,7 +15,8 @@ var loginSaisie = "";
 var passwordSaisie = "";
 var newPassword = "";
 
-
+//Récupère le login et le password saisis. Vérifie si ils correspondent à une entrée dans la bdd et si il s'agit d'un auteur ou d'un juré.
+//Redirige vers la page d'accès juré ou auteur en fonction des informations renseignées. 
 function validerRediriger() {
     loginSaisie = document.getElementById("pseudo").value;
     passwordSaisie = document.getElementById("pass").value;
