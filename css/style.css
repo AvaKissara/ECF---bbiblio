@@ -238,10 +238,11 @@ nav ul li ul li {
 /*Start Main*/
 .slider {
     display: inline-block;
-    background-color: rgb(240, 151, 36);
+    background-color: rgb(248, 159, 143);
     min-height: 700px;
     max-width: 850px;
     margin: 40px 20px 7px 150px;
+    padding-top: 40px;
 }
 
 .affichage-slider img {
@@ -380,7 +381,7 @@ nav ul li ul li {
 .laureats-annee {
     padding: 15px 45px;
     margin-top: 15px;
-    max-width: 500px;
+    max-width: 600px;
 }
 
 .laureats-annee span {
@@ -389,7 +390,7 @@ nav ul li ul li {
 
 .par-categorie {
     padding: 50px 55px;
-    width: 500px;
+    width: 550px;
   
 }
 
@@ -400,7 +401,7 @@ nav ul li ul li {
 
 .presentation-livre {
     display: inline-block;
-    width: 280px;
+    width: 300px;
     height: 100px;
 }
 
@@ -415,7 +416,6 @@ nav ul li ul li {
 .formulaire-jury {
     min-width: 750px;
     min-height: 500px;
-    border:1px solid #2f2f2f;
     margin:0 auto;
     display:block;
     width:100%;
