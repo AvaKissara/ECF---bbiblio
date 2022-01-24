@@ -421,7 +421,7 @@ nav ul li ul li {
 
 .laureats-resume {
     float:right;
-    width: 150px;
+    width: 270px;
     text-align: justify;
     padding-left: 30px;
 }
@@ -432,7 +432,7 @@ nav ul li ul li {
     color: white;
     padding: 4px 10px;
     cursor: pointer;
-    margin-left: 220px;
+    margin-left: 20px;
 }
 .loguez-button:hover {
     background-color: #444343;
