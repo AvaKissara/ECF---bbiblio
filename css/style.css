@@ -136,7 +136,7 @@ a.socials-item:hover {
     width: 60px;
 }
 .bandeau button:hover {
-    background: rgb(255, 144, 99);
+    background: rgb(253, 123, 71);
 }
 
 .loguee {
@@ -244,7 +244,6 @@ nav ul li ul li {
     clear: both;
 }
 /*End Navbar*/
-
 /*End Header*/
 
 /*Start Main*/
@@ -254,7 +253,7 @@ main {
 
 .slider {
     display: inline-block;
-    background: rgb(255, 144, 99);
+    background: rgb(255, 128, 78);
     min-height: 700px;
     max-width: 850px;
     margin: 40px 20px 7px 150px;
