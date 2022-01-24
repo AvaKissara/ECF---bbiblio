@@ -372,10 +372,12 @@ main {
 }
 
 .acces-jury-notees {
-    max-width: 250px;
+    max-width: 350px;
     margin: 50px 60px;
     height: 180px;
-    border: 2px solid seashell;
+    border-top: 2px solid seashell;
+    border-left: 2px solid seashell;;
+    max-height: 600px;
 }
 
 .livre-noter {
