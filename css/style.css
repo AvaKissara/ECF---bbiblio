@@ -376,7 +376,7 @@ main {
     margin: 50px 60px;
     height: 180px;
     border-top: 2px solid seashell;
-    border-left: 2px solid seashell;;
+    border-left: 2px solid seashell;
     max-height: 600px;
 }
 
@@ -429,6 +429,11 @@ main {
 .laureats-annee span {
     margin: 25px;  
     
+}
+
+.annee-container {
+    border: 2px solid seashell;
+    min-width: 500px;
 }
 
 .par-categorie {
